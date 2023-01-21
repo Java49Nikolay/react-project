@@ -5,6 +5,7 @@ import timeZones from "../time-zones";
 type TimerProps = {
     cityOrCountry: string;
 }
+///
 export const Timer: React.FC<TimerProps> = (props) => {
     const timeZoneIndex: number = timeZones.findIndex(tz => JSON.stringify(tz).includes(props.cityOrCountry))
     const timeZone:string = timeZones[timeZoneIndex]?.name;
