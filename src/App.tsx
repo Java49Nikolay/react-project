@@ -11,7 +11,7 @@ function App() {
   function inputProcessFun(value: string): string {
     const cityCountriesFromInput: string[] = value.split("#");
     let res:string = '';
-    if(cityCountriesFromInput.length % 2 != 0) {
+    if(cityCountriesFromInput.length % 2 !== 0) {
       res = "There should be even number of the country/cities"
     } else {
         setCityCountries(cityCountriesFromInput.slice());
