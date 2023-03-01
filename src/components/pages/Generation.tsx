@@ -18,10 +18,8 @@ export const Generation: React.FC = () => {
             dispatch(employeesActions.addEmployee(createRandomEmployee()));
         }
         setAlertAccess(true);
-        setTimeout(() => setAlertAccess(false),alertTimeout );
-    }
+        setTimeout(() => setAlertAccess(false),alertTimeout );    }
     
-
 
     return <Box>
         <form onSubmit={onSubmitFn} >
