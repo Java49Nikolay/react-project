@@ -37,7 +37,7 @@ function App() {
               dispatch(employeesActions.getEmployees());
         }
       
-    },[authUser, dispatch])
+    },[authUser])
   return <BrowserRouter>
       <Routes>
           <Route path='/' element={<NavigatorDispatch 
